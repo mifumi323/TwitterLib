@@ -1,0 +1,23 @@
+{
+    "name": "mifumi323/twitter-lib",
+    "description": "Twitter wrapper",
+    "type": "library",
+    "require": {
+        "abraham/twitteroauth": "^0.7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MifuminLib\\TwitterLib\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mifumi323",
+            "email": "mifumi323@tgws.fromc.jp"
+        }
+    ]
+}
