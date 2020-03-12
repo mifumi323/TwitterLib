@@ -1,7 +1,9 @@
 {
     "name": "mifumi323/twitter-lib",
     "description": "Twitter wrapper",
+    "version": "1.0.0",
     "type": "library",
+    "readme": "README.md",
     "require": {
         "abraham/twitteroauth": "^0.7.4"
     },
