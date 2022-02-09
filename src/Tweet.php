@@ -12,7 +12,7 @@ class Tweet
     /**
      * Twitterオブジェクト
      *
-     * @var \MifuminLib\Twitter
+     * @var \MifuminLib\TwitterLib\Twitter|null
      */
     public $twitter = null;
 
@@ -32,11 +32,11 @@ class Tweet
 
     /**
      * 初期化します。
-     * 通常は、\TGWS\TwitterオブジェクトのprepareTweetメソッドから生成してください。
+     * 通常は、\MifuminLib\TwitterLib\TwitterオブジェクトのprepareTweetメソッドから生成してください。
      *
-     * @param \TGWS\Twitter|null $twitter
+     * @param \MifuminLib\TwitterLib\Twitter|null $twitter
      */
-    public function __construct($twitter = null)
+    public function __construct(?\MifuminLib\TwitterLib\Twitter $twitter = null)
     {
         $this->twitter = $twitter;
     }
@@ -46,7 +46,7 @@ class Tweet
      *
      * @return object
      */
-    public function post()
+    public function post(): object
     {
         return $this->twitter->post('statuses/update', $this->toOAuthParams());
     }
@@ -54,10 +54,10 @@ class Tweet
     /**
      * ツイート内容を設定します。
      *
-     * @param  string              $status
-     * @return \TGWS\Twitter\Tweet
+     * @param  string                 $status
+     * @return \MifuminLib\TwitterLib\Tweet
      */
-    public function setStatus($status)
+    public function setStatus($status): \MifuminLib\TwitterLib\Tweet
     {
         $this->status = $status;
 
@@ -69,7 +69,7 @@ class Tweet
      *
      * @return array
      */
-    public function toOAuthParams()
+    public function toOAuthParams(): array
     {
         $params = ['status' => $this->status];
 
