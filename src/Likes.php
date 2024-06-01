@@ -1,6 +1,6 @@
 <?php
 
-namespace MifuminLib\TwitterLib;
+namespace Mifumi323\TwitterLib;
 
 /**
  * いいねの集合を取り扱います。
@@ -10,7 +10,7 @@ class Likes
     /**
      * Twitterオブジェクト
      *
-     * @var \MifuminLib\TwitterLib\Twitter
+     * @var \Mifumi323\TwitterLib\Twitter
      */
     public $twitter;
 

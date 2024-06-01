@@ -1,9 +1,9 @@
 <?php
 
-namespace MifuminLib\TwitterLib;
+namespace Mifumi323\TwitterLib;
 
 /**
- * MifuminLib\TwitterLib\Twitter
+ * Mifumi323\TwitterLib\Twitter
  *
  * Twitter APIのラッパーです。
  */
@@ -172,7 +172,7 @@ class Twitter
      */
     public function prepareTweet($status = ''): Tweet
     {
-        return (new \MifuminLib\TwitterLib\Tweet($this))->setStatus($status);
+        return (new \Mifumi323\TwitterLib\Tweet($this))->setStatus($status);
     }
 
     /**

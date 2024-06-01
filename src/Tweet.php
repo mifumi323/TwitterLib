@@ -1,9 +1,9 @@
 <?php
 
-namespace MifuminLib\TwitterLib;
+namespace Mifumi323\TwitterLib;
 
 /**
- * MifuminLib\TwitterLib\Tweet
+ * Mifumi323\TwitterLib\Tweet
  *
  * ツイート一つを表します。
  */
@@ -12,7 +12,7 @@ class Tweet
     /**
      * Twitterオブジェクト
      *
-     * @var \MifuminLib\TwitterLib\Twitter|null
+     * @var \Mifumi323\TwitterLib\Twitter|null
      */
     public $twitter = null;
 
@@ -32,11 +32,11 @@ class Tweet
 
     /**
      * 初期化します。
-     * 通常は、\MifuminLib\TwitterLib\TwitterオブジェクトのprepareTweetメソッドから生成してください。
+     * 通常は、\Mifumi323\TwitterLib\TwitterオブジェクトのprepareTweetメソッドから生成してください。
      *
-     * @param \MifuminLib\TwitterLib\Twitter|null $twitter
+     * @param \Mifumi323\TwitterLib\Twitter|null $twitter
      */
-    public function __construct(?\MifuminLib\TwitterLib\Twitter $twitter = null)
+    public function __construct(?\Mifumi323\TwitterLib\Twitter $twitter = null)
     {
         $this->twitter = $twitter;
     }
@@ -55,9 +55,9 @@ class Tweet
      * ツイート内容を設定します。
      *
      * @param  string                 $status
-     * @return \MifuminLib\TwitterLib\Tweet
+     * @return \Mifumi323\TwitterLib\Tweet
      */
-    public function setStatus($status): \MifuminLib\TwitterLib\Tweet
+    public function setStatus($status): \Mifumi323\TwitterLib\Tweet
     {
         $this->status = $status;
 
