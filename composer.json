@@ -12,7 +12,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Mifumi323\\TwitterLib\\": "src/"
+            "Mifumi323\\TwitterLib\\": "src/",
+            "MifuminLib\\TwitterLib\\": "old/"
         }
     },
     "license": "MIT",
